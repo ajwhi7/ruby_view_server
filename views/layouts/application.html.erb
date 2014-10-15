@@ -1,4 +1,9 @@
-<html>
+  <%
+    def link_to(name, url)
+        return "<a href='#{url}'>#{name}</a>"
+     end
+    %>
+    <html>
   <body>
     <h1>You're using a layout</h1>
     <p>
@@ -9,6 +14,7 @@
     </p>
     <hr />
     <div>
+      <%= link_to(Googly Schmoogly, http://google.com) %>
       <%= yield %>
     </div>
     <hr />
